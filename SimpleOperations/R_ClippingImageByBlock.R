@@ -138,6 +138,7 @@ foreach(i=1:length(list_extents )) %dopar% {
   #this functions pads 0's to the output image to ensure the size fits
   extend(rst_crop,
          tmp_extent,
+         value=0,
          outname,
          options=c("COMPRESS=LZW"),
          overwrite=T)
